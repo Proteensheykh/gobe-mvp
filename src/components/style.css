@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+#root {
+    overflow-x: hidden;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.gobe-logo {
+    display: inline-block;
+    width: 80px;
+    margin-top: 80px;
+}
+
+.value-proposition {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+    margin-top: 10%;
+    font-size: 34px;
+    letter-spacing: -0.065em;
+    box-sizing: border-box;
+}
+
+.illustration {
+    display: flex;
+    height: 495px;
+    margin-top: 2px;
+}
+
+.confrimation-box {
+    font-size: 15px;
+    margin-left: 1em;
+}
+
+.confirmation-box__div {
+    margin-top: 24px;
+}
+
+.input-box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 1em;
+    border-radius: 30px;
+    border: 2px white;
+    background: white;
+    box-shadow: 0 4px 2px 1px rgb(182, 180, 180);
+    padding: 20px;
+    /* width: 300px; */
+    height: 50px;
+    outline: none !important;
+}
+
+.submit {
+    background-color: #22B573;
+    border-radius: 30px;
+    border: 3px #22B573;
+    width: 100%;
+    height: 50px;
+    font-family: IBM Plex Sans;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+
+
+@media(max-width: 767px) {
+    .illustration {
+        display: none;
+    }
+
+    
+    .main-container__relative {
+        height: 70%;
+        position: absolute;
+    }
+
+    .main-container {
+        position: relative;
+        background-image: url('../assets/mobile-illustration.svg');
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-position: center center;
+        background-position-y: bottom;
+    }
+}

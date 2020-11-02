@@ -3,9 +3,11 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout';
 import Home from './components/Home';
 import Welcome from './components/Welcome';
+import { Container } from 'react-bootstrap';
 
 const App = () => (
-    <Router>
+    <Container>
+        <Router>
         <Layout>
             <Switch>
                 <Route exact path='/' component={Home} />
@@ -13,6 +15,7 @@ const App = () => (
             </Switch>
         </Layout>
     </Router>
+    </Container>
 );
 
 export default App;

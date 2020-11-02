@@ -1,13 +1,16 @@
 import React from 'react';
 import {Link, } from 'react-router-dom';
+import logo from '../assets/logo.svg';
+import { Navbar } from 'react-bootstrap';
+
+import './style.css';
 
 const navbar = () => (
-    <nav className="navbar navbar-light bg-light">
-        <Link className="navbar-brand" to='/'>
-            <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" className="d-inline-block align-top" alt="" loading="lazy"/>
-                GoBe
-        </Link>
-    </nav>
+    <header>
+        <a href="/">
+            <img src={logo} alt="gobe-logo" className="gobe-logo" />
+        </a>
+    </header>
 );
 
 export default navbar;

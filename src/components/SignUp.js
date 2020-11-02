@@ -1,6 +1,8 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import axios from'axios';
+import axios from 'axios';
+
+import './style.css';
 
 const SignUp = () => {
     const {register, handleSubmit, errors} = useForm();
@@ -30,11 +32,12 @@ const SignUp = () => {
     return (
         <div className="container">
             
-            <button type="button" class="btn btn-outline-primary">Join Us</button>
+            {/* <button type="button" className="btn btn-outline-primary">Join Us</button> */}
 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input 
                     placeholder='First Name' 
+                    className="input-box"
                     type='text' 
                     name='first_name'
                     ref={register({required: "Name field is required", pattern: /^[A-Za-z]+$/i})}
@@ -43,28 +46,34 @@ const SignUp = () => {
                 <br/>
 
                 <input placeholder='Email' 
-                    type='text' 
+                    className="input-box"
+                    type='email' 
                     name='email'
                     ref={register({
                             required: "Email field is required", 
                             //RegEx email validation patterns
-                            pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})
+                            pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                            })
                         }
                     required
                 />
-                {errors.email && <p>{errors.name.message}</p>}
+                {errors.email && <p>{errors.email.message}</p>}
                 <br/>
 
+                <div>
                 <input
-                    type='checkbox' 
+                    type='radio' 
                     name='confirmed'
+                    className="confirmation-box__div"
                     ref={register}
                 />
-                <label for='confirmed'> sign up for our newsletter</label>
+                <label className="confrimation-box" htmlFor='confirmed'>Susbcribe to our newsletter</label>
+                </div>
                 <br/>
 
                 <input placeholder='Signup' 
                     type='submit' 
+                    className="submit"
                 />
             </form>
         </div>
