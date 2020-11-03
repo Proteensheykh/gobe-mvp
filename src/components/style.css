@@ -13,31 +13,57 @@
 .gobe-logo {
     display: inline-block;
     width: 80px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .value-proposition {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: IBM Plex Sans;
     align-items: flex-start;
     margin-top: 10%;
-    font-size: 34px;
-    letter-spacing: -0.065em;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.020em;
     box-sizing: border-box;
 }
 
+.welcome {
+    font-family: IBM Plex Sans;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: -0.060em;
+    margin-top: 10%;
+}
+
 .illustration {
+    display: relative;
+    width: 100%;
+    margin-top: 122px;
+}
+
+.welcome-illustration {
     display: flex;
-    height: 495px;
-    margin-top: 2px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.check-mail {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .confrimation-box {
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 1em;
+    font-weight: 400;
 }
 
 .confirmation-box__div {
+    font-family: IBM Plex Sans;
     margin-top: 24px;
+    height: 30px;
+    width: 30px;
 }
 
 .input-box {
@@ -49,7 +75,7 @@
     background: white;
     box-shadow: 0 4px 2px 1px rgb(182, 180, 180);
     padding: 20px;
-    /* width: 300px; */
+    width: 80%;
     height: 50px;
     outline: none !important;
 }
@@ -58,7 +84,7 @@
     background-color: #22B573;
     border-radius: 30px;
     border: 3px #22B573;
-    width: 100%;
+    width: 80%;
     height: 50px;
     font-family: IBM Plex Sans;
     text-align: center;
@@ -82,7 +108,24 @@
         position: relative;
         background-image: url('../assets/mobile-illustration.svg');
         background-repeat: no-repeat;
+        min-height: 85vh;
         background-size: 200%;
+        background-position: center center;
+        background-position-y: bottom;
+    }
+}
+
+@media(max-width: 767px) {
+    .welcome-illustration {
+        display: none;
+    }
+
+    .welcome-container {
+        position: relative;
+        background-image: url('../assets/welcome-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 150%;
+        min-height: 80vh;
         background-position: center center;
         background-position-y: bottom;
     }

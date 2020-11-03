@@ -15,22 +15,22 @@ const Home = () => {
             </Container>
            <Container className="main-container">
            <Row>
-                <Col xs={12} md={6} sm={12}>
+                <Col xs={12} md={5} sm={12}>
                     <div>
                         <h2 className="value-proposition">Get access to valuable resources and information to grow a career in education and collaborate with passionate educators just like you.</h2>
-                        <p className="lead">
+                        <div className="lead">
                             <SignUp />
-                        </p>
+                        </div>
                     </div>
                 </Col>
-                <Col xs={12} md={6} sm={6}>
+                <Col>
                 <Image src={illustration} alt="illustration" className="illustration"/>
                 </Col>
             </Row>
 
             <footer className="mastfoot mt-auto">
                 <div className="inner">
-                    <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                <a href="http://www.freepik.com"> Illustrations Designed by pch.vector / Freepik</a>
                 </div>
             </footer>
            </Container>
