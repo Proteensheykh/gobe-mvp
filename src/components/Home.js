@@ -10,8 +10,8 @@ const Home = () => {
     
     return (
         <main>
-            <Container className="main-container__relative">
-
+             <Container className="main-container__relative">
+               
             </Container>
            <Container className="main-container">
            <Row>
@@ -24,15 +24,20 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col>
+                <div>
                 <Image src={illustration} alt="illustration" className="illustration"/>
+                </div>
+                <div className="inner">
+                    <a href="http://www.freepik.com" target="_blank"> Illustrations Designed by pch.vector / Freepik</a>
+                </div>
                 </Col>
             </Row>
 
-            <footer className="mastfoot mt-auto">
+            {/* <footer className="footer">
                 <div className="inner">
-                <a href="http://www.freepik.com"> Illustrations Designed by pch.vector / Freepik</a>
+                <a href="http://www.freepik.com" target="_blank"> Illustrations Designed by pch.vector / Freepik</a>
                 </div>
-            </footer>
+            </footer> */}
            </Container>
         </main>
     );

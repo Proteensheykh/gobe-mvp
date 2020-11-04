@@ -90,8 +90,8 @@
     text-align: center;
     color: white;
     outline: none;
+    margin-top: 8%;
 }
-
 
 @media(max-width: 767px) {
     .illustration {
@@ -100,8 +100,9 @@
 
     
     .main-container__relative {
-        height: 70%;
+        min-height: 85vh;
         position: absolute;
+        width: 100%;
     }
 
     .main-container {

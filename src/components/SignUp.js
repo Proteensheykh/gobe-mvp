@@ -68,8 +68,6 @@ const SignUp = () => {
                 />
                 <label className="confrimation-box" htmlFor='confirmed'>Susbcribe to our newsletter</label>
                 </div>
-                <br/>
-
                 <input placeholder='Signup' 
                     type='submit' 
                     className="button"
