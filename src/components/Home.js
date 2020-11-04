@@ -28,8 +28,8 @@ const Home = () => {
                 </Col>
             </Row>
 
-            <footer className="mastfoot mt-auto">
-                <div className="inner">
+            <footer className="footer mt-auto py-3">
+                <div className="footer-container">
                 <a href="http://www.freepik.com"> Illustrations Designed by pch.vector / Freepik</a>
                 </div>
             </footer>
