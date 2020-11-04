@@ -14,7 +14,7 @@ const Home = () => {
                
             </Container>
            <Container className="main-container">
-           <Row>
+           <Row className="illustrator-tag">
                 <Col xs={12} md={5} sm={12}>
                     <div>
                         <h2 className="value-proposition">Get access to valuable resources and information to grow a career in education and collaborate with passionate educators just like you.</h2>
@@ -32,12 +32,6 @@ const Home = () => {
                 </div>
                 </Col>
             </Row>
-
-            <footer className="footer">
-                <div className="inner">
-                <a href="http://www.freepik.com" target="_blank"> Illustrations Designed by pch.vector / Freepik</a>
-                </div>
-            </footer>
            </Container>
         </main>
     );

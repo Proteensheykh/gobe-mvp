@@ -93,8 +93,14 @@
     margin-top: 8%;
 }
 
-<<<<<<< HEAD
-=======
+.illustrator-tag {
+    height: 95vh;
+}
+
+.col-12 {
+    height: 100%;
+}
+
 .footer-container {
     width: auto;
     max-width: 680px;
@@ -106,7 +112,6 @@
   }
 
 
->>>>>>> 5f00a856e03f85aa3e1216a4605730656220b19f
 @media(max-width: 767px) {
     .illustration {
         display: none;
