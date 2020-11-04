@@ -7,16 +7,12 @@ import './style.css';
 const SignUp = () => {
     const {register, handleSubmit, errors} = useForm();
 
-    //meta data/config for post request
     const config = {
         headers: {'Content-Type': 'application/json'}
     };
 
-    //Handles data submission and is passed as a callback to handleSubmit()
     const onSubmit = async (data) => {
         try {
-            /**create a .env file at the app_root directory [>landing_page_mvp]
-             * And store this > REACT_APP_API_URL = 'https://gobe-home.herokuapp.com'*/
             const res = await axios.post(`${process.env.REACT_APP_API_URL}/frontend/api/users/`, data, config);
             console.log(res)
             window.location.replace("/welcome");
@@ -26,15 +22,18 @@ const SignUp = () => {
         }
     }
 
-    /**the 'Join us' button currently sits idle because I only 
-     * implemented the javascript logic and routing. 
-     * The 'Join us' button reveals the form*/
+    const dropForm = () => {
+
+        document.querySelector("#join-us").className="collapse";
+        document.querySelector("#signUpForm").className="show";
+    }
+
     return (
         <div className="container">
             
-            {/* <button type="button" className="btn btn-outline-primary">Join Us</button> */}
+           <button type="button" className="button" id="join-us" onClick={dropForm}>Join Us</button>
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className="collapse" id="signUpForm">
                 <input 
                     placeholder='First Name' 
                     className="input-box"
@@ -73,7 +72,7 @@ const SignUp = () => {
 
                 <input placeholder='Signup' 
                     type='submit' 
-                    className="submit"
+                    className="button"
                 />
             </form>
         </div>
