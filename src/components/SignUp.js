@@ -62,7 +62,7 @@ const SignUp = () => {
 
                 <div>
                 <input
-                    type='radio' 
+                    type='checkbox' 
                     name='confirmed'
                     className="confirmation-box__div"
                     ref={register}
