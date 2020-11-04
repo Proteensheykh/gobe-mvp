@@ -33,11 +33,11 @@ const Home = () => {
                 </Col>
             </Row>
 
-            {/* <footer className="footer">
+            <footer className="footer">
                 <div className="inner">
                 <a href="http://www.freepik.com" target="_blank"> Illustrations Designed by pch.vector / Freepik</a>
                 </div>
-            </footer> */}
+            </footer>
            </Container>
         </main>
     );

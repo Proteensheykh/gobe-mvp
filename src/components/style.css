@@ -93,6 +93,20 @@
     margin-top: 8%;
 }
 
+<<<<<<< HEAD
+=======
+.footer-container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  
+  .footer {
+    background-color: transparent;
+  }
+
+
+>>>>>>> 5f00a856e03f85aa3e1216a4605730656220b19f
 @media(max-width: 767px) {
     .illustration {
         display: none;

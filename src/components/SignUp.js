@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
@@ -6,6 +7,7 @@ import './style.css';
 
 const SignUp = () => {
     const {register, handleSubmit, errors} = useForm();
+    const history = useHistory();
 
     const config = {
         headers: {'Content-Type': 'application/json'}
@@ -14,8 +16,9 @@ const SignUp = () => {
     const onSubmit = async (data) => {
         try {
             const res = await axios.post(`${process.env.REACT_APP_API_URL}/frontend/api/users/`, data, config);
-            console.log(res)
-            window.location.replace("/welcome");
+            console.log(res);
+            
+            history.push('/welcome')
         }
         catch (err) {
 
