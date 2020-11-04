@@ -54,16 +54,30 @@
 }
 
 .confrimation-box {
+    position: flex;
+    font-family: IBM Plex Sans;
     font-size: 18px;
     margin-left: 1em;
     font-weight: 400;
+    margin-top: 5%;
 }
 
 .confirmation-box__div {
-    font-family: IBM Plex Sans;
     margin-top: 24px;
-    height: 30px;
-    width: 30px;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    vertical-align: middle;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.confirmation-box__div:checked {
+    background-color: #22B573;
 }
 
 .input-box {
@@ -93,24 +107,19 @@
     margin-top: 8%;
 }
 
-.illustrator-tag {
-    height: 95vh;
+.error-image {
+    display: flex;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.col-12 {
-    height: 100%;
+.centre {
+    position: flex;
+    margin-left: 40%;
 }
-
-.footer-container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
-  }
-  
-  .footer {
-    background-color: transparent;
-  }
-
 
 @media(max-width: 767px) {
     .illustration {

@@ -1,9 +1,10 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout';
 import Home from './components/Home';
-import { HOMEPAGE, WELCOME } from './routes/urlRoutes';
+import { HOMEPAGE, WELCOME, PAGENOTFOUND } from './routes/urlRoutes';
 import Welcome from './components/Welcome';
+import NotFoundPage from './components/NotFoundPage';
 import { Container } from 'react-bootstrap';
 
 const App = () => (
@@ -13,6 +14,8 @@ const App = () => (
             <Switch>
                 <Route exact path={HOMEPAGE} component={Home} />
                 <Route exact path={WELCOME} component={Welcome} />
+                <Route path={PAGENOTFOUND} component={NotFoundPage} />
+                <Redirect to={PAGENOTFOUND} />
             </Switch>
         </Layout>
     </Router>
