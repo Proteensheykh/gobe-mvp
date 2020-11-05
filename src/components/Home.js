@@ -27,9 +27,6 @@ const Home = () => {
                 <div>
                 <Image src={illustration} alt="illustration" className="illustration"/>
                 </div>
-                <div className="inner">
-                    <a href="http://www.freepik.com" target="_blank"> Illustrations Designed by pch.vector / Freepik</a>
-                </div>
                 </Col>
             </Row>
            </Container>
