@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout';
 import Home from './components/Home';
 import { HOMEPAGE, WELCOME } from './routes/urlRoutes';
