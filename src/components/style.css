@@ -121,6 +121,11 @@
     margin-left: 40%;
 }
 
+.go-back-link {
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+}
+
 @media(max-width: 767px) {
     .illustration {
         display: none;
