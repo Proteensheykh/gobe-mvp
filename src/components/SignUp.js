@@ -21,7 +21,7 @@ const SignUp = () => {
             history.push('/welcome')
         }
         catch (err) {
-
+            
         }
     }
 
@@ -64,7 +64,7 @@ const SignUp = () => {
 
                 <div>
                 <input
-                    type='checkbox' 
+                    type='radio' 
                     name='confirmed'
                     className="confirmation-box__div"
                     ref={register}
