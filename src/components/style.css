@@ -47,6 +47,10 @@
     margin-top: 10%;
 }
 
+#signUpForm {
+    margin-top: 1em;
+}
+
 .check-mail {
     display: flex;
     flex-direction: row;
@@ -83,7 +87,6 @@
 .input-box {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-top: 1em;
     border-radius: 30px;
     border: 2px white;
     background: white;
@@ -124,6 +127,13 @@
 .go-back-link {
     font-family: IBM Plex Sans;
     font-size: 18px;
+}
+
+.error-message {
+    color: red;
+    font-family: IBM Plex Sans;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 @media(max-width: 767px) {
