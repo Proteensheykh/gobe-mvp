@@ -49,7 +49,6 @@ const SignUp = () => {
                 {errors.name && <p>{errors.name.message}</p>}
                 <br />
                 <div>
-                    <p className="error-message" id="emailError"></p>
                 </div>
                 <input placeholder='Email'
                     className="input-box"
@@ -64,6 +63,9 @@ const SignUp = () => {
                     required
                 />
                 {errors.email && <p>{errors.email.message}</p>}
+                <div>
+                <p className="error-message" id="emailError"></p>
+                </div>
                 <br />
 
                 <div>
