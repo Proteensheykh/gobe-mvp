@@ -21,8 +21,9 @@ const SignUp = () => {
         }
         catch (err) {
             if (err.response.status === 400) {
-                alert("email aleady exists");
+                var text = "email already in use. Try another.";
             }
+            document.getElementById("emailError").innerHTML = text;
         }
     }
 
@@ -47,7 +48,8 @@ const SignUp = () => {
                 />
                 {errors.name && <p>{errors.name.message}</p>}
                 <br />
-
+                <div>
+                </div>
                 <input placeholder='Email'
                     className="input-box"
                     type='email'
@@ -61,6 +63,9 @@ const SignUp = () => {
                     required
                 />
                 {errors.email && <p>{errors.email.message}</p>}
+                <div>
+                <p className="error-message" id="emailError"></p>
+                </div>
                 <br />
 
                 <div>
