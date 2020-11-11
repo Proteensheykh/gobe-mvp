@@ -14,10 +14,15 @@ const SignUp = () => {
     };
 
     const onSubmit = async (data) => {
+        console.log(data);
         try {
-            await axios.post(`${process.env.REACT_APP_API_URL}/frontend/api/users/`, data, config);
-
-            history.push('/welcome')
+            // await axios.post(`${process.env.REACT_APP_API_URL}/frontend/api/users/`, data, config)
+            await axios.post(`http://127.0.0.1:8000/frontend/api/users/`, data, config)
+                .then((res)=>{
+                    console.log(res)
+                    history.push('/welcome')
+             }).catch(err=>console.log(err))
+            
         }
         catch (err) {
             if (err.response.status === 400) {
