@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout';
 import Home from './components/Home';
 import { HOMEPAGE, WELCOME } from './routes/urlRoutes';
@@ -14,7 +14,8 @@ const App = () => (
             <Switch>
                 <Route exact path={HOMEPAGE} component={Home} />
                 <Route exact path={WELCOME} component={Welcome} />
-                <Route path="*" component={NotFoundPage} />
+                <Route path="/404" component={NotFoundPage} />
+                <Redirect to="/404" />
             </Switch>
         </Layout>
     </Router>

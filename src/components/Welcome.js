@@ -11,7 +11,7 @@ const welcome = () => (
                 <Col xs={12} md={4} sm={12}>
                     <Row>
                         <div>
-                            <h2 className="welcome">Welcome to Go-Be</h2>
+                            <h2 className="welcome">Welcome to GoBe</h2>
                         </div>
                         <div>
                             <h2 className="check-mail">Please check your mail.</h2>
