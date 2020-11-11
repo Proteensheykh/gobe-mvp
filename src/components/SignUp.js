@@ -52,7 +52,7 @@ const SignUp = () => {
                     ref={register({ required: "Name field is required", pattern: /^[A-Za-z]+$/i })}
                 />
                 {errors.first_name && <div><p className="error-message">Only first name required</p></div>}
-                <br />
+
                 <div>
                 </div>
                 <input placeholder='Email'
