@@ -77,6 +77,7 @@ const SignUp = () => {
                     <input
                         type='checkbox'
                         name='confirmed'
+                        required
                         className="confirmation-box__div"
                         ref={register}
                     />
