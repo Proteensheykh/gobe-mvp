@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import welcomeIllustration from '../assets/xmas_illustration.svg';
-import './style.css';
+
+import './Welcome.css';
 
 const welcome = () => (
     <main>

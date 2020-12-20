@@ -1,0 +1,13 @@
+.go-back {
+    font-family: IBM Plex Sans;
+    color: #22B573;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.error-image {
+    width: 100%;
+}

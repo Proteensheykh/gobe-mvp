@@ -1,0 +1,63 @@
+#signUpForm {
+    margin-top: 1em;
+}
+
+.confrimation-box {
+    position: flex;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    margin-left: 1em;
+    font-weight: 400;
+}
+
+.confirmation-box__div {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border: 1px solid white;
+    vertical-align: middle;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.confirmation-box__div:checked {
+    background-color: #22B573;
+}
+
+.input-box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 1em;
+    border: 2px white;
+    background: white;
+    box-shadow: 0 4px 2px 1px rgb(182, 180, 180);
+    padding: 20px;
+    width: 80%;
+    height: 50px;
+    outline: none !important;
+}
+
+
+.button {
+    background-color: #22B573;
+    border-radius: 30px;
+    border: 3px #22B573;
+    width: 80%;
+    height: 50px;
+    font-family: IBM Plex Sans;
+    text-align: center;
+    color: white;
+    outline: none;
+    margin-top: 5%;
+}
+
+.error-message {
+    color: red;
+    font-family: IBM Plex Sans;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
