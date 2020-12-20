@@ -15,8 +15,8 @@ const SignUp = () => {
 
     const onSubmit = async (data) => {
         console.log(data);
-            // await axios.post(`${process.env.REACT_APP_API_URL}/api/v1/users/subscribe/`, data, config)
-            await axios.post(`http://127.0.0.1:8000/api/v1/users/subscribe/`, data, config)
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/v1/users/subscribe/`, data, config)
+            // await axios.post(`http://127.0.0.1:8000/api/v1/users/subscribe/`, data, config)
                 .then((res)=>{
                     console.log(res)
                     history.push('/welcome')
