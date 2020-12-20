@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/gobe_xmas.svg';
 
-import './style.css';
+import './NavBar.css';
 
 const navbar = () => (
     <header>

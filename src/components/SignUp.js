@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
-import './style.css';
+import './SignUp.css';
 
 const SignUp = () => {
     const { register, handleSubmit, errors } = useForm();
@@ -15,21 +15,13 @@ const SignUp = () => {
 
     const onSubmit = async (data) => {
         console.log(data);
-        try {
-            await axios.post(`${process.env.REACT_APP_API_URL}/frontend/api/users/`, data, config)
-            // await axios.post(`http://127.0.0.1:8000/frontend/api/users/`, data, config)
+            await axios.post(`${process.env.REACT_APP_API_URL}/api/v1/users/subscribe/`, data, config)
+            // await axios.post(`http://127.0.0.1:8000/api/v1/users/subscribe/`, data, config)
                 .then((res)=>{
                     console.log(res)
                     history.push('/welcome')
-             }).catch(err=>console.log(err))
-            
-        }
-        catch (err) {
-            if (err.response.status === 400) {
-                var text = "email already in use. Try another.";
-            }
-            document.getElementById("emailError").innerHTML = text;
-        }
+             })
+             .catch(err=>console.log(err.response.data.message))
     }
 
     const dropForm = () => {

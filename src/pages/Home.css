@@ -1,0 +1,15 @@
+.value-proposition {
+    font-family: IBM Plex Sans;
+    align-items: flex-start;
+    margin-top: 10%;
+    font-size: 2vw;
+    font-weight: 900;
+    letter-spacing: 0.020em;
+    box-sizing: border-box;
+}
+
+.illustration {
+    display: relative;
+    width: 100%;
+    margin-top: 122px;
+}

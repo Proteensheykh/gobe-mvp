@@ -1,10 +1,10 @@
 import React from 'react';
-import SignUp from './SignUp';
+import SignUp from '../components/SignUp';
 import {Container, Row, Col, Image} from 'react-bootstrap';
 
 import illustration from '../assets/illustration_1.svg';
 
-import './style.css';
+import './Home.css';
 
 const Home = () => {
     

@@ -1,11 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import Layout from './hoc/Layout';
-import Home from './components/Home';
+import Home from './pages/Home';
 import { HOMEPAGE, WELCOME } from './routes/urlRoutes';
-import Welcome from './components/Welcome';
-import NotFoundPage from './components/NotFoundPage';
+import Welcome from './pages/Welcome';
+import NotFoundPage from './pages/NotFoundPage';
 import { Container } from 'react-bootstrap';
+
+import './style.css';
 
 const App = () => (
     <Container>
